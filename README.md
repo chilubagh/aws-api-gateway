@@ -19,5 +19,13 @@ func main() {
 	// Make the handler available for Remote Procedure Call by AWS Lambda
 	lambda.Start(hello)
 }
+```
+
+# Building your function(Linux and macOS)
+Preparing a binary to deploy to AWS Lambda requires that it is compiled for Linux and placed into a .zip file.<br>
+# Remember to build your handler executable for Linux!<br>
+GOOS=linux GOARCH=amd64 go build -o main main.go<br>
+zip main.zip main<br>
+
 
 
