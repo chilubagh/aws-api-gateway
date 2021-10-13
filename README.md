@@ -36,7 +36,8 @@ Windows developers may have trouble producing a zip file that marks the binary a
 Getting the tool
 
 ```set GO111MODULE=on
-go.exe get -u github.com/aws/aws-lambda-go/cmd/build-lambda-zip```
+go.exe get -u github.com/aws/aws-lambda-go/cmd/build-lambda-zip
+
 
 Use the tool from your GOPATH. If you have a default installation of Go, the tool will be in %USERPROFILE%\Go\bin.
 
@@ -48,6 +49,7 @@ set CGO_ENABLED=0
 go build -o main main.go
 %USERPROFILE%\Go\bin\build-lambda-zip.exe -o main.zip main
 ```
+
 In Powershell:
 ```$env:GOOS = "linux"
 $env:GOARCH = "amd64"
