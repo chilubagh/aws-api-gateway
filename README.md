@@ -4,7 +4,7 @@ Lambda is a compute service that lets you run code without provisioning or manag
 I deploying a Rest API using AWS,API Gateway and lambda functions using golang.
 
 # Getting Started
-// main.go
+`// main.go
 package main
 
 import (
