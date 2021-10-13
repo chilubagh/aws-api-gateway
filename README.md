@@ -23,9 +23,11 @@ func main() {
 
 # Building your function(Linux and macOS)
 Preparing a binary to deploy to AWS Lambda requires that it is compiled for Linux and placed into a .zip file.<br>
-# Remember to build your handler executable for Linux!<br>
+Remember to build your handler executable for Linux!<br>
 GOOS=linux GOARCH=amd64 go build -o main main.go<br>
 zip main.zip main<br>
 
+#Function Deployment
+The function was deployed using then official [AWS documentation](https://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html)
 
 
