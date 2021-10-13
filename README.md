@@ -8,15 +8,16 @@ I deploying a Rest API using AWS,API Gateway and lambda functions using golang.
 package main
 
 import (
-	"github.com/aws/aws-lambda-go/lambda" <br>
-)<br>
+	"github.com/aws/aws-lambda-go/lambda" 
+)
 
-func hello() (string, error) {<br>
-	return "Hello ƛ!", nil<br>
-}<br>
+func hello() (string, error) {
+	return "Hello ƛ!", nil
+}
 
 func main() {
-	// Make the handler available for Remote Procedure Call by AWS Lambda<br>
-	lambda.Start(hello)<br>
+	// Make the handler available for Remote Procedure Call by AWS Lambda
+	lambda.Start(hello)
 }
+
 
