@@ -30,4 +30,14 @@ zip main.zip main<br>
 #Function Deployment
 The function was deployed using then official [AWS documentation](https://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html)
 
+# For Windows
+Windows developers may have trouble producing a zip file that marks the binary as executable on Linux. To create a .zip that will work on AWS Lambda, the build-lambda-zip tool may be helpful.
+
+Getting the tool
+
+```set GO111MODULE=on
+go.exe get -u github.com/aws/aws-lambda-go/cmd/build-lambda-zip
+
+
+
 
